@@ -10,11 +10,24 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=www.jacinto.design">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
 
     <title>Hugo </title>
 </head>
 
 <body>
+    <!-- Dark Mode Switch -->
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <span class="toggle-text">Light Mode</span>
+            <i class="fas fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
+    </div>
     <!-- ? Navigation Bar Section Start -->
     <section class="navigation">
         <nav class="navbar navbar-expand-md navbar-light  ">
@@ -111,184 +124,225 @@
 
             </div>
         </div>
+        <br>
         <div class="page1Down" id="page1Down">
             <div class="page1DownLeft">
                 <h2>welcome to<br>my portfolio <br>website</h2>
             </div>
             <div class="page1DownRight">
                 <div class="animation">
-                    <img class="arrow" src="./img/arrow.png" alt="">
+                    <img class="arrow" src="./img/kite.png" alt="">
                 </div>
             </div>
         </div>
     </div>
     <!-- ? Page One Ends Here -->
-    <!-- ? Page Two Starts Here -->
-    <div class="page2" id="page2">
-        <div class="page2Left">
+
+    <div class="page" id="page2">
+        <div class="pageLeft" id="page2">
             <h2>about me</h2>
             <div class="textContainer">
-                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis itaque cumque aspernatur modi
+                <h3 class="contentH3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis itaque
+                    cumque aspernatur modi
                     nostrum exercitationem at. Nam natus possimus reprehenderit omnis corrupti ab, excepturi iusto culpa
                     quam esse? Pariatur, cupiditate?</h3>
             </div>
-            <button onclick="document.getElementById('link').click()">download cv</button>
+            <button class="downloadBtn" onclick="document.getElementById('link').click()">download cv</button>
             <a id="link" href="https://www.dropbox.com/s/qf4an1hc7eqghwi/Frame%204.pdf?dl=0" download hidden></a>
         </div>
-        <div class=" page2Right">
-            <div class="content">
-                <img class="coder" src="./img/coder-svg.svg" alt="">
+        <div class="pageRight">
+            <div class="imgContent">
+                <img class="aboutMeImg" src="./img/aboutMe.png" alt="">
             </div>
         </div>
     </div>
-    <!-- ? Page Two Ends Here -->
-    <!-- ? Page III Starts Here -->
-    <div class="page3" id="page3">
-        <div class="page3Container">
-            <div class="page3Left">
-                <img class="page3Content" src="./img/html-css-js.png" alt="">
-            </div>
-            <div class="page3Right">
-                <h2>skills</h2>
-                <h3>
-                    <li>HTML5,</li>
-                    <li>CSS3,</li>
-                    <li>Javascript,</li>
-                    <li>AJAX & JSON,</li>
-                    <li>Bootstrap 4 & 5,</li>
-                    <li>Working with API,</li>
-                    <li>Terminal,</li>
-                    <li>NodeJS &NPM,</li>
-                    <li>Express,</li>
-                    <li>RESTful API’s,</li>
-                    <li>Mongo DB,</li>
-                    <li>Mongoose,</li>
-                    <li>Passport,</li>
-                    <li>Geocoding & Maps</li>
-                </h3>
-            </div>
-        </div>
-        <div>
-            <div class="page3Buttom">
-                <img src="./img/page3Logos/pngaaa 1.png" alt="">
-                <img src="./img/page3Logos/pngaaa 2.png" alt="">
-                <img src="./img/page3Logos/pngaaa 3.png" alt="">
-                <img src="./img/page3Logos/pngaaa 4.png" alt="">
-                <img src="./img/page3Logos/pngwing 1.png" alt="">
-                <img src="./img/page3Logos/toppng 1.png" alt="">
+    <div class="page" id="page3">
 
-            </div>
-        </div>
-    </div>
-    <!-- ? Page III Ends Here -->
-    <!-- ? Page IV Starts Here -->
-    <div class="page4" id="page4">
-        <div class="page4Container">
-            <div class="page4Left">
-                <div class="experienceHeader">
-                    <br><br><br><br><br><br><br><br>
-                    <h2>experience</h2>
+        <div class="pageLeft" id="pageContent">
+            <div class="imgContainer">
+                <img class="cssImg" src="./img/html-css-js.png" alt="">
+                <div class="miniLogos">
+                    <img src="./img/page3Logos/pngaaa 1.png" alt="">
+                    <img src="./img/page3Logos/pngaaa 2.png" alt="">
+                    <img src="./img/page3Logos/pngaaa 3.png" alt="">
+                    <img src="./img/page3Logos/pngaaa 4.png" alt="">
+                    <img src="./img/page3Logos/pngwing 1.png" alt="">
+                    <img src="./img/page3Logos/toppng 1.png" alt="">
+
                 </div>
-                <div class="experienceCont">
-                    <div class="contain1">
-                        <div class="dot">
-                            <img src="./img/png.png" alt="">
-                        </div>
-                        <div class="date">
-                            <h3>2020-2021</h3>
-                        </div>
-                        <div class="jobTittle">
-                            <h3>Web Developer Bootcamp - San Jose, CA</h3> <br>
-                            <li>HTML5, CSS3, Bootstrap 4 & 5, Javascript, AJAX & JSON, Working with API, Terminal,
-                                NodeJS &NPM, Express, RESTful API’s, Mongo DB, Mongoose, Passport, Geocoding & Maps
-                            </li>
-                            <br><br>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="pageRight" id="page3">
+            <h2>skills</h2>
+            <br><br>
+            <div class="skillList">
+                <li>HTML5,</li>
+                <li>CSS3,</li>
+                <li>Javascript,</li>
+                <li>AJAX & JSON,</li>
+                <li>Bootstrap 4 & 5,</li>
+                <li>Working with API,</li>
+                <li>Terminal,</li>
+                <li>NodeJS &NPM,</li>
+                <li>Express,</li>
+                <li>RESTful API’s,</li>
+                <li>Mongo DB,</li>
+                <li>Mongoose,</li>
+                <li>Passport,</li>
+                <li>Geocoding & Maps</li>
+            </div>
 
-                    <div class="contain1">
-                        <div class="dot">
-                            <img src="./img/png.png" alt="">
-                        </div>
-                        <div class="date">
-                            <h3>2020-current</h3>
-                        </div>
-                        <div class="jobTittle">
-                            <h3>Experienced Lead Senior - Deloitte, San Jose, CA</h3> <br>
-                            <li>Leading audit teams in delivery of PCAOB audits and SOX audits, in compliance with tight
-                                deadlines.</li>
-                            <li>Internal and external auditing for clients within the industries of high-tech
-                                semiconductor, entertainment, and information technology services.</li>
-                            <br>
-                            <br>
-                        </div>
-                    </div>
+        </div>
 
-                    <div class="contain1">
-                        <div class="dot">
-                            <img src="./img/png.png" alt="">
-                        </div>
-                        <div class="date">
-                            <h3>2015-2019</h3>
-                        </div>
-                        <div class="jobTittle">
-                            <h3>Senior Auditor- Deloitte, Turkey</h3> <br>
-                            <li>Provided auditing and consulting services in industries such as, iron and steel,
-                                hospitality, manufacturing, and NGO.</li>
-                            <li>Preparation and auditing of reports in accordance with Local Statutory Regulations,
-                                Capital Markets Board Regulations, IAS, IFRS.</li>
-                        </div>
+    </div>
+    <div class="page" id="page4">
+        <div class="pageLeft">
+            <h2>experience</h2>
+            <div class="experienceContainer">
+                <h2>2020-2021</h2>
+                <br>
+                <h4>Web Developer Bootcamp - San Jose, CA</h4>
+                <li>HTML5, CSS3, Bootstrap 4 & 5, Javascript, AJAX & JSON, Working with API, Terminal, NodeJS &NPM,
+                    Express, RESTful API’s, Mongo DB, Mongoose, Passport, Geocoding & Maps
+                </li>
+            </div>
+            <div class="experienceContainer">
+                <h2>2019-Current</h2>
+                <br>
+                <h4>Experienced Lead Senior - Deloitte, San Jose, CA</h4>
+                <li>Leading audit teams in delivery of PCAOB audits and SOX audits, in compliance with tight deadlines.
+                </li>
+                <li>Internal and external auditing for clients within the industries of high-tech semiconductor,
+                    entertainment, and information technology services.</li>
+
+            </div>
+            <div class="experienceContainer">
+                <h2>2015-2019</h2>
+                <br>
+                <h4>Senior Auditor- Deloitte, Turkey</h4>
+                <li>Provided auditing and consulting services in industries such as, iron and steel, hospitality,
+                    manufacturing, and NGO.
+                </li>
+                <li>Preparation and auditing of reports in accordance with Local Statutory Regulations, Capital Markets
+                    Board Regulations, IAS, IFRS.</li>
+
+            </div>
+            <!-- <img class="experienceImg" src="./img/experienceText.png" alt=""> -->
+        </div>
+        <div class="pageRight">
+            <img class="expImgBall" src="./img/content-360deg 1.png" alt="">
+            <img class="experienceImgRight" src="./img/Mask Group.png" alt="">
+
+        </div>
+    </div>
+    <div class="page" id="page5">
+        <div class="pageLeft">
+            <img class="educationImg" src="./img/Group 2.png" alt="">
+        </div>
+        <div class="pageRight">
+            <h2>education</h2>
+            <div class="education">
+                <div class="educationContainer">
+                    <h2>2020-2021</h2> <br>
+                    <h4>Web Developer Bootcamp</h4>
+                </div>
+                <div class="educationContainer">
+                    <h2>2014-2015</h2> <br>
+                    <div class="educationSub">
+                        <h4>Bachelor of Science: Economics</h4>
+                        <li> <em>Universite D'auvergne - Clermont Ferrand/France</em></li>
                     </div>
                 </div>
+                <div class="educationContainer">
+                    <h2>2009-2014</h2> <br>
+                    <div class="educationSub">
+                        <h4>Bachelor of Science: Economics</h4>
+                        <li> <em> Ege University - Izmir/Turkey</em></li>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <img class="educationImg" src="./img/Group 1.png" alt=""> -->
+        </div>
+    </div>
+    <div class="page" id="page6">
+        <div class="pageLeft">
+            <h2>additional tools that i know</h2>
+            <img class="additionalLogos" src="./img/additionalminiLogo.png" alt="">
+        </div>
+        <div class="pageRight">
+            <div class="skillContainer">
+                <li>Blender - 3D Computer Graphics Software</li>
+                <li>Adobe Photoshop - Digital Art </li>
+                <li>Adobe Premier Pro - Video edit and effects</li>
+                <li>Adobe Illustrator</li>
+                <li>Figma - Web Site Design </li>
+                <li>Bootstrap 4 & 5 - CSS and JavaScript Based Design Templates </li>
+                <li>Python 3 - Bootcamp </li>
 
             </div>
-            <div class="page4Right">
-                <img src="./img/content-360deg 1.png" alt="">
-                <img class="teamWork" src="./img/Mask Group.png" alt="">
+            <!-- <img class="skillsImg"
+                src="./img/Blender - 3D Computer Graphics Software Adobe Photoshop - Digital Art Adobe Premier Pro - Video edit and effects Adobe Illustrator Figma - Web Site Design Bootstrap 4 & 5 - CSS and JavaScript Based Design Templates Python 3 - Bootcamp.png"
+                alt=""> -->
+        </div>
+    </div>
+    <div class="page" id="page7">
+        <div class="pageLeft">
+            <h2>Hello, right? </h2>
+        </div>
+        <div class="pageRight">
+            <h2>Sureeeee!</h2>
+        </div>
+    </div>
+    <div class="page" id="page8">
+        <div class="pageLeft" id="contactImg">
+
+            <div class="contactMe">
+                <h2>contact me </h2>
+                <br><br>
+                <div class="contactMeContainer">
+                    <img src="./img/phone-call 2.png" alt="">
+                    <h3>(669)-250-9656</h3>
+                </div>
+                <div class="contactMeContainer">
+                    <img src="./img/world 3.png" alt="">
+                    <h3>San Jose, CA</h3>
+                </div>
+                <div class="contactMeContainer">
+                    <img src="./img/letter 3.png" alt="">
+                    <h3>hugounal.dev@gmail.com</h3>
+                </div>
+                <br><br><br>
+            </div>
+
+        </div>
+        <div class="pageRight">
+            <div class="contact">
+                <br><br><br><br><br><br><br><br>
+                <h2>leave me a message</h2>
+                <form action="https://formsubmit.co/123548248153263a3c30234161f10538" method="POST">
+                    <label for="name">full name</label>
+                    <input type="text" name="name" required>
+                    <br><br><br>
+                    <label for="email">e-mail</label>
+                    <input type="email" name="email" required>
+                    <br><br><br>
+                    <label for="message">message</label>
+                    <input type="text" name="message" class="textMessage" required>
+                    <br><br>
+
+                    <button class="download" type="submit">send message</button>
+                </form>
             </div>
         </div>
     </div>
-    <!-- ? Page IV Ends Here -->
-    <!-- ? Page V Starts Here -->
-    <div class="page5" id="page5">
-        <div class="page5Left">
-            <img src="./img/Group 2.png" alt="">
-        </div>
-        <div class="page5Right">
-
-            <img src="./img/Group 1.png" alt="">
-        </div>
-    </div>
-    <!-- ? Page V Ends Here -->
-    <!-- ? Page VI Starts Here -->
-    <div class="page6" id="page6">
-        <div class="page6Left order-1">
-            <h2>additional tools that i use</h2>
-            <img src="./img/logoContent.png" alt="">
-        </div>
-        <div class="page6Right order-2">
-
-            <img src="./img/Blender - 3D Computer Graphics Software Adobe Photoshop - Digital Art Adobe Premier Pro - Video edit and effects Adobe Illustrator Figma - Web Site Design Bootstrap 4 & 5 - CSS and JavaScript Based Design Templates Python 3 - Bootcamp.png"
-                alt="">
-        </div>
-    </div>
-    <!-- ? Page VI Ends Here -->
-    <div class="page7" id="page7">
-        <div class="page7Top">
-            <h2>my projects</h2>
-        </div>
-        <div class="page7Left"></div>
-        <div class="page7Right"></div>
-    </div>
-    <div class="page8" id="page8">
-        <footer>
-            <h3>contact me </h3>
-            <br><br><br> <br>
-            <img src="./img/Group 7.png" alt="">
 
 
-        </footer>
-    </div>
+
+
+
+
+
 
 
 
